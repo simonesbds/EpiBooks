@@ -12,7 +12,7 @@ const AddComment = ({ asin, refreshComments }) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzRjOTcyYmY0YjFiYjAwMTU3MTBmZGMiLCJpYXQiOjE3NDE4OTQ2NzAsImV4cCI6MTc0MzEwNDI3MH0.TgaxWWWIEpuiOI9ZXFC92fAVfIvGMaRSUs1f-Q95-c8"
+          Authorization: "Bearer ${STRIVE_ID}"
         },
         body: JSON.stringify({ comment, rate, elementId: asin })
       });
